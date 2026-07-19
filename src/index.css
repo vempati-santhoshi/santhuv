@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700&family=Instrument+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap');
+
+:root {
+  --ink: #17171a;
+  --muted: #67676f;
+  --line: rgba(23, 23, 26, 0.08);
+  --orange: #ff3621;
+  --amber: #ff8a3d;
+  --bronze: #a97142;
+  --silver: #8f98a3;
+  --gold: #d99a1b;
+  --pbi: #e9b00e;
+}
+
+* { box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  margin: 0;
+  background: #ffffff;
+  color: var(--ink);
+  font-family: 'Instrument Sans', -apple-system, 'Segoe UI', sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+.display { font-family: 'Sora', sans-serif; }
+.mono { font-family: 'IBM Plex Mono', monospace; }
+
+.glass {
+  background: rgba(255, 255, 255, 0.72);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border: 1px solid rgba(255, 255, 255, 0.6);
+}
+
+.soft-shadow { box-shadow: 0 1px 2px rgba(23,23,26,.04), 0 12px 32px rgba(23,23,26,.07); }
+.soft-shadow-lg { box-shadow: 0 2px 4px rgba(23,23,26,.04), 0 24px 64px rgba(255,54,33,.09); }
+
+.lift { transition: transform .35s cubic-bezier(.2,.8,.2,1), box-shadow .35s cubic-bezier(.2,.8,.2,1); }
+.lift:hover { transform: translateY(-5px); box-shadow: 0 4px 8px rgba(23,23,26,.05), 0 28px 56px rgba(23,23,26,.11); }
+
+@keyframes floaty { 0%,100% { transform: translateY(0) } 50% { transform: translateY(-10px) } }
+@keyframes fadeUp { from { opacity: 0; transform: translateY(18px) } to { opacity: 1; transform: translateY(0) } }
+@keyframes dashflow { to { stroke-dashoffset: -28; } }
+@keyframes pulseRing { 0% { transform: scale(.9); opacity: .55 } 100% { transform: scale(1.5); opacity: 0 } }
+
+.fade-up { opacity: 0; animation: fadeUp .8s cubic-bezier(.2,.8,.2,1) forwards; }
+.flow-line { stroke-dasharray: 4 10; animation: dashflow 1.1s linear infinite; }
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; }
+  .fade-up { opacity: 1; }
+}
