@@ -268,7 +268,7 @@ export default function App() {
             <div style={{ width: 28, height: 28, borderRadius: 9, background: "linear-gradient(135deg, var(--orange), var(--amber))", display: "flex", alignItems: "center", justifyContent: "center" }}>
               <Sparkles size={15} color="#fff" />
             </div>
-            <span className="display" style={{ fontWeight: 600, fontSize: 15.5, letterSpacing: "-0.01em" }}>Aarav Mehta</span>
+            <span className="display" style={{ fontWeight: 600, fontSize: 15.5, letterSpacing: "-0.01em" }}>Santhoshi</span>
           </div>
           <div style={{ display: "flex", gap: 28, fontSize: 14.5, color: "var(--muted)", fontWeight: 500 }}>
             <a href="#pipeline" style={{ color: "inherit", textDecoration: "none" }}>Pipeline</a>
@@ -365,7 +365,7 @@ export default function App() {
               </h2>
             </div>
             <a href="#" className="mono" style={{ fontSize: 13.5, color: "var(--ink)", textDecoration: "none", display: "inline-flex", gap: 6, alignItems: "center" }}>
-              github.com/aarav <ArrowUpRight size={15} />
+              github.com/vempati-santhoshi <ArrowUpRight size={15} />
             </a>
           </div>
           <div style={{ display: "grid", gridTemplateColumns: "repeat(3, 1fr)", gap: 22 }}>
@@ -408,7 +408,7 @@ export default function App() {
                 I'm open to analytics and data engineering opportunities — let's talk about what your data could be doing.
               </p>
             </div>
-            <a href="mailto:hello@example.com" style={{
+            <a href="mailto:santhoshivempati12@gmail.com" style={{
               position: "relative", whiteSpace: "nowrap", display: "inline-flex", alignItems: "center", gap: 9,
               background: "#fff", color: "var(--ink)", fontWeight: 600, fontSize: 15.5, padding: "15px 28px",
               borderRadius: 14, textDecoration: "none",
@@ -417,7 +417,7 @@ export default function App() {
             </a>
           </div>
           <footer style={{ display: "flex", justifyContent: "space-between", alignItems: "center", padding: "30px 6px 36px", color: "var(--muted)", fontSize: 14 }}>
-            <span>© 2026 Aarav Mehta · Built with PySpark-fueled coffee</span>
+            <span>© 2026 Santhoshi Vempati · Built with matcha(Extra-Hot).</span>
             <span style={{ display: "flex", gap: 18 }}>
               <Code2 size={18} /> <Globe size={18} /> <Mail size={18} />
             </span>
